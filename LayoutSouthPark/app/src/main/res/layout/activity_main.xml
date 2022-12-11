@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/cartmen"
+            tools:layout_editor_absoluteX="11dp"
+            tools:layout_editor_absoluteY="15dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/kyle"
+            tools:layout_editor_absoluteX="11dp"
+            tools:layout_editor_absoluteY="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/kenny"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="290dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/stan"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="290dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

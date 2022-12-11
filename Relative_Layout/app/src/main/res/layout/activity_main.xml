@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/ad"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:text="Kullanıcı Adı:" />
+    <EditText
+        android:id="@+id/adGiris"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ad"
+        />  <!--Bu Komut Satırı EditText'in TextView nesnesinin sağında olmasını sağlar  -->
+    <TextView
+        android:id="@+id/sifre"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/adGiris"
+        android:gravity="center_vertical"
+        android:text="Şifre:" />
+    <EditText
+        android:id="@+id/sifreGiris"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:layout_below="@+id/adGiris"
+        android:layout_toRightOf="@+id/sifre"
+        />
+
+    <Button
+        android:id="@+id/tamam"
+        android:layout_width="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="TAMAM"
+        />
+    <Button
+        android:id="@+id/iptal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tamam"
+        android:layout_alignParentBottom="true"
+        android:text="İPTAL"
+        />
+
+
+</RelativeLayout>

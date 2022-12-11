@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentsActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/yorum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="start"
+        android:text="Kullanıcı_1 :  Bu mekan tam anlamıyla gençlere göre eğer sizde genç hissediyorsanız gitmenizi tavsiye ediyorum emrediyorum"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="italic">
+    </TextView>
+
+    <TextView
+        android:id="@+id/yorum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yorum1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="start"
+        android:text="Kullanıcı_2 :  Bu mekan tam anlamıyla gençlere göre eğer sizde genç hissediyorsanız gitmenizi tavsiye ediyorum"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="italic">
+
+    </TextView>
+
+
+    <!-- Burda yorum yaparken alt satıra geçmesini sağladık ve max 100 kelimeye izin verdik  -->
+    <EditText
+        android:id="@+id/yorumyap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yorum2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:hint="Yorum Yapın "
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="italic">
+
+    </EditText>
+
+   <LinearLayout
+       android:id="@+id/linear"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center_horizontal"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       android:layout_above="@id/ratingBar">
+
+       <TextView
+           android:id="@+id/puan"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Mekanı Puanla : "
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:textColor="@color/black"
+           android:textSize="18dp"
+           android:textStyle="italic">
+
+       </TextView>
+
+       <TextView
+           android:id="@+id/sonuc"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0.0"
+           android:textSize="18dp"
+           android:textStyle="italic"
+           android:textAlignment="textStart"
+           android:gravity="start"
+           android:textColor="@color/black">
+       </TextView>
+
+   </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gonder"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:numStars="5"
+        android:rating="0.0"
+        android:stepSize="1.0">
+
+    </RatingBar>
+
+    <Button
+        android:id="@+id/gonder"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="onay"
+        android:text="Gönder"
+        app:backgroundTint="#0E40D7" >
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/goback"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/gonder"
+        android:onClick="geridon"
+        android:text="Ana Sayfa"
+        app:backgroundTint="#0E40D7">
+
+    </Button>
+
+
+
+</RelativeLayout>

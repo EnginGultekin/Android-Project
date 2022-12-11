@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_liste_elemani"
+    android:background="@color/white"
+    android:layout_marginBottom="5dp"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txt_restoran_adi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:hint="Restoran Adi"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_adres"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:layout_margin="3dp"
+            android:hint="Restoran Adresi"/>
+        <TextView
+            android:id="@+id/txt_cinsi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:layout_margin="3dp"
+            android:hint="Restoran Cinsi"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_puan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:hint="Puan"
+        android:padding="5dp"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

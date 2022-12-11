@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#9E1A704D"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/yayinGonderici"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="10dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Yayın Gönder"
+        android:textAlignment="center"
+        android:textColor="#AA8866"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:backgroundTint="#171616" />
+
+</LinearLayout>

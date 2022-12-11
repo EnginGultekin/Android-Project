@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+        android:layout_marginBottom="94dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/cartmen"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/kenny"
+            tools:layout_editor_absoluteX="197dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/kyle"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="282dp" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/stan"
+            tools:layout_editor_absoluteX="231dp"
+            tools:layout_editor_absoluteY="266dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

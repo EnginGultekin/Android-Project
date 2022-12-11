@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaplan"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="228dp" >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="245dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="@string/merhaba"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="57dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="238dp"
+        android:layout_height="66dp"
+        android:text="@string/mrb"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="266dp"
+        android:layout_height="74dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/merhaba"
+        android:textAlignment="center"
+        android:textSize="36dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

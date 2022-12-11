@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#100F0F">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     app:layout_constraintEnd_toEndOf ="parent"
+     app:layout_constraintVertical_bias ="0.0"
+     app:layout_constraintStart_toStartOf ="parent"
+     app:layout_constraintTop_toTopOf ="parent" >
+
+
+    <!--  <androidx.cardview.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" >
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" >
+
+
+             <TextView
+                 android:layout_width="207dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:text="Kahvaltılıklar"
+                 android:textColor="@color/white"
+                 android:textSize="24dp"
+                 android:textStyle="italic">
+
+             </TextView>   -->
+
+     <ImageView
+         android:id="@+id/kahvalti"
+         android:layout_width="match_parent"
+         android:layout_height="255dp"
+         android:layout_alignParentTop="true"
+         android:layout_marginBottom="1dp"
+         android:onClick="breakfast"
+         app:srcCompat="@drawable/kahvalti" />
+
+
+       <!--  </RelativeLayout>
+     </androidx.cardview.widget.CardView>   -->
+
+    <ImageView
+        android:id="@+id/anayemek"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_below="@id/kahvalti"
+        android:onClick="dinner"
+        android:layout_marginTop="-3dp"
+        android:layout_marginBottom="1dp"
+        app:srcCompat="@drawable/anayemek" />
+
+    <ImageView
+        android:id="@+id/meyve"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/anayemek"
+        android:onClick="fruit"
+        android:layout_marginTop="-2dp"
+        android:layout_marginBottom="1dp"
+        app:srcCompat="@drawable/meyve2" />
+
+    <ImageView
+        android:id="@+id/atistirmalik"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/meyve"
+        android:onClick="snack"
+        android:layout_marginBottom="2dp"
+        app:srcCompat="@drawable/atis" />
+
+    <ImageView
+        android:id="@+id/tatli"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@id/atistirmalik"
+        android:onClick="tatli"
+        android:layout_marginBottom="1dp"
+        app:srcCompat="@drawable/tatli" />
+
+    <ImageView
+        android:id="@+id/drink"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/tatli"
+        android:onClick="drink"
+        android:layout_marginBottom="1dp"
+        app:srcCompat="@drawable/icecek" />
+
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drink"
+        android:layout_marginBottom="1dp"
+        android:background="#0A0B0B"
+        android:insetTop="-1dp"
+        android:insetBottom="0dp"
+        android:onClick="calculate"
+        android:text="Calculate"
+        android:textColor="#FFFCFC"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:backgroundTint="#00E5FF">
+
+    </Button>
+
+ </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

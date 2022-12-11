@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PowerActivity">
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Number"
+        android:inputType="number"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/power"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Power of Number"
+        android:inputType="number"
+        android:textColor="#000" />
+
+
+    <Button
+        android:id="@+id/calculatepower"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/power"
+        android:layout_marginTop="30dp"
+        android:onClick="calculatePower"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/sonuc2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculatepower"
+        android:layout_marginTop="30dp"
+        android:text="Result : "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+
+    <Button
+        android:id="@+id/don2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:onClick="goback2"
+        android:text="Go Back For Main Screen" />
+
+
+
+</RelativeLayout>

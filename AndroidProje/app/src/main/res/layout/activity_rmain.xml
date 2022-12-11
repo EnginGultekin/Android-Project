@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".RMainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Mekan Adı"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Adres"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Açık/Kapalı (Saatler)"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Ara"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="414dp"
+        android:layout_height="258dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="10dp"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rowCount="2">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_margin="5dp"
+            android:backgroundTint="#FFAEC9"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="toMenu"
+            android:text="Menü"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"></Button>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_margin="5dp"
+            android:backgroundTint="#EFE4B0"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="toYorumlar"
+            android:text="Yorumlar"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"></Button>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_margin="5dp"
+            android:backgroundTint="#99D9EA"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="toKonum"
+            android:text="Konum"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"></Button>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_margin="5dp"
+            android:backgroundTint="#C3C3C3"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="toFotograf"
+            android:text="Fotoğraf"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"></Button>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_margin="5dp"
+            android:backgroundTint="#C8BFE7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="toMekanBilgisi"
+            android:text="Mekan Bilgisi"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"></Button>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_margin="5dp"
+            android:backgroundTint="#FFFF80"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="toForum"
+            android:text="Forum"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"></Button>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,2 @@
+rootProject.name = "List_Set_Map_Array"
+include ':app'

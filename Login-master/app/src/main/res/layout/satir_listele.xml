@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- Burda yön (orientation) özelliği verilmemiş, bu durumda varsayılan yön yataydır.
+           Kodlanan elemanlar yan yana dizileceğinden sıra sıra yerleştirmek gerekmektedir.
+    -->
+    <TableRow>
+        <!--   İlk satırda bir TexView ve bir EditText nesnesi var .Burada sütünların genişliğini belirtmekte
+                fayda var, bundan sonra aynı satır genişliği kullanılacak
+        -->
+        <TextView
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:width="120dp"
+            android:height="25dp"
+            android:text="Ad Soyad:" />
+
+        <TextView
+            android:id="@+id/editTextAd"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:width="120dp"
+            android:height="25dp"
+            />
+    </TableRow>
+
+
+
+    <TableRow>
+        <TextView
+            android:text="MailA dresi:"
+            android:height="25dp"
+            android:width="120dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            />
+        <TextView
+            android:id="@+id/mail"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:width="120dp"
+            android:height="25dp"
+            />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="id:"
+            android:height="25dp"
+            android:width="120dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:width="120dp"
+            android:height="25dp">
+        </TextView>
+
+    </TableRow>
+
+
+    <!-- Tabloya elemanları yerleştirdikten sonra tablonun altına bir Checkbox ve Button nesnesi ekleyebiliriz.
+            Bu yeni elemanların her birinin bir üst elemandan 20 piksel aralıklı yerleştirilmesini sağlayalım
+    -->
+
+
+</TableLayout>

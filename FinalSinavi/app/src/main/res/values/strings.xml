@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FinalSinavi</string>
+    <string-array name="CalculateMod">
+        <item>Henüz Seçilmedi</item>
+        <item>Calculate Factorial</item>
+        <item>Calculate Power of Number</item>
+    </string-array>
+</resources>
