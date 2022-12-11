@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Homwork1</string>
+    <string-array name="telefonModu">
+        <item>Sessiz</item>
+        <item>Titreşim</item>
+        <item>Sesli</item>
+        <item>Melodi</item>
+    </string-array>
+
+
+    <!--  <string name="telefonModu">telefonModu</string> -->
+
+</resources>
+

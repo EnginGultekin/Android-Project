@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<!-- Burda yön (orientation) özelliği verilmemiş, bu durumda varsayılan yön yataydır.
+       Kodlanan elemanlar yan yana dizileceğinden sıra sıra yerleştirmek gerekmektedir.
+-->
+    <TableRow>
+
+<!--   İlk satırda bir TexView ve bir EditText nesnesi var .Burada sütünların genişliğini belirtmekte
+        fayda var, bundan sonra aynı satır genişliği kullanılacak
+-->
+        <TextView
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:width="120dp"
+            android:height="25dp"
+            android:text="Ad:" />
+        <EditText
+            android:id="@+id/editTextAd"
+            android:width ="240dp"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Soyad:"
+            android:height="25dp"
+            android:layout_marginLeft="8dp"
+            />
+        <EditText
+            android:id="@+id/editTextSoyad"
+            />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Cinsiyet:"
+            android:height="25dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <Spinner android:id="@+id/spinnerCinsiyet" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="E-Posta"
+            android:height="25dp"
+            android:layout_marginLeft="8dp"
+            />
+        <EditText
+            android:id="@+id/editTextEposta"
+            />
+    </TableRow>
+
+<!-- Tabloya elemanları yerleştirdikten sonra tablonun altına bir Checkbox ve Button nesnesi ekleyebiliriz.
+        Bu yeni elemanların her birinin bir üst elemandan 20 piksel aralıklı yerleştirilmesini sağlayalım
+-->
+
+    <CheckBox
+        android:id="@+id/checkBoxGelismeler"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkBoxGelismeler"
+        android:checked="false"
+        android:layout_margin="30px"
+        />
+
+    <Button
+        android:id="@+id/buttonUyeEkle"
+        android:text="@string/buttonUyeEkle"
+        android:layout_margin="30px"
+        />
+
+</TableLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Table_Layout</string>
+    <string name="checkBoxGelismeler">Gelismelerden haberdar olmak İstiyor musunuz ?</string>
+    <string name="buttonUyeEkle">Yeni Uye Ekle</string>
+
+</resources>
